@@ -2,8 +2,6 @@ package com.vubeta.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.vubeta.dto.RestaurantDto;
 import com.vubeta.model.Restaurant;
 import com.vubeta.model.User;
