@@ -53,7 +53,7 @@ public class RestaurantController {
 	@GetMapping("/{id}")
 	public ResponseEntity<Restaurant> findRestaurantById(
 			@RequestHeader("Authorization") String jwt,
-			@PathVariable Long id
+			@PathVariable("id") Long id
 			) throws Exception {
 		User user = userService.findUserByJwtToken(jwt);
 		
@@ -64,7 +64,7 @@ public class RestaurantController {
 	@PutMapping("/{id}/add-favorites")
 	public ResponseEntity<RestaurantDto> addToFavorites(
 			@RequestHeader("Authorization") String jwt,
-			@PathVariable Long id
+			@PathVariable("id") Long id
 			) throws Exception {
 		User user = userService.findUserByJwtToken(jwt);
 		
