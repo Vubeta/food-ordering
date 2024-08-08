@@ -2,7 +2,6 @@ package com.vubeta.service;
 
 import com.vubeta.model.Cart;
 import com.vubeta.model.CartItem;
-import com.vubeta.model.User;
 import com.vubeta.request.AddCartItemRequest;
 
 public interface CartService {
